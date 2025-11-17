@@ -22,10 +22,10 @@ export function LogoutButton({ redirectTo = "/auth/login", label = "Logout" }) {
     <div>
       <button
         onClick={handleLogout}
-        className="border text-gray-600 flex items-center justify-start gap-1 cursor-pointer hover:bg-black hover:text-white px-4 py-2 rounded-md font-semibold  transition-all duration-200"
+        className="border text-white bg-red-500 flex items-center justify-start gap-1 cursor-pointer hover:bg-black hover:text-white px-4 py-2 rounded-md font-semibold  transition-all duration-200"
       >
         <span>
-          <LogOut />
+          <LogOut className="w-4 h-4 " />
         </span>
         {label}
       </button>
